@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="354" viewBox="0 0 820 354" role="img" aria-label="Terminal: whoami, stack y ansible">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size: 15px; }
+    .p { fill: #7ee787; font-weight: 600; }
+    .c { fill: #e6edf3; }
+    .o { fill: #8b949e; }
+    .a { fill: #79c0ff; }
+    .k { fill: #ffa657; }
+    .ok { fill: #3fb950; }
+    .h { opacity: 0; }
+    .cursor { fill: #e6edf3; }
+  </style>
+  <defs>
+    <linearGradient id="bar" x1="0" x2="1">
+      <stop offset="0" stop-color="#161b22"/>
+      <stop offset="1" stop-color="#1c2330"/>
+    </linearGradient>
+    <clipPath id="c1"><rect x="0" y="0" height="354" width="0"><animate attributeName="width" from="0" to="76" begin="0.6s" dur="0.7s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c2"><rect x="0" y="0" height="354" width="0"><animate attributeName="width" from="0" to="139" begin="2.4s" dur="0.8s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c3"><rect x="0" y="0" height="354" width="0"><animate attributeName="width" from="0" to="319" begin="4.3s" dur="1.4s" fill="freeze"/></rect></clipPath>
+    <clipPath id="c4"><rect x="0" y="0" height="354" width="0"><animate attributeName="width" from="0" to="121" begin="7.6s" dur="0.8s" fill="freeze"/></rect></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="818" height="352" rx="12" fill="#0d1117" stroke="#30363d"/>
+  <path d="M1 13 a12 12 0 0 1 12 -12 h794 a12 12 0 0 1 12 12 v25 h-818 z" fill="url(#bar)"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/>
+  <circle cx="44" cy="20" r="6" fill="#febc2e"/>
+  <circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text x="410" y="25" text-anchor="middle" class="o" style="font-size:13px">luca@sre: ~</text>
+
+  <g transform="translate(24 0)">
+    <!-- 1: whoami -->
+    <g clip-path="url(#c1)"><text y="72"><tspan class="p">$ </tspan><tspan class="c">whoami</tspan></text></g>
+    <text y="96" class="h"><tspan class="a">Luca Pecorelli</tspan><tspan class="o"> · DevOps / SRE</tspan><set attributeName="opacity" to="1" begin="1.5s" fill="freeze"/></text>
+
+    <!-- 2: stack -->
+    <g clip-path="url(#c2)"><text y="132"><tspan class="p">$ </tspan><tspan class="c">cat stack.txt</tspan></text></g>
+    <text y="156" class="h o">aws · linux · docker/podman · kubernetes · ansible · python · bash · nginx<set attributeName="opacity" to="1" begin="3.4s" fill="freeze"/></text>
+    <text y="180" class="h o">grafana · prometheus · loki · mimir · alloy · fluent-bit · elk<set attributeName="opacity" to="1" begin="3.7s" fill="freeze"/></text>
+
+    <!-- 3: ansible -->
+    <g clip-path="url(#c3)"><text y="216"><tspan class="p">$ </tspan><tspan class="c">ansible-playbook -i </tspan><tspan class="k">prod</tspan><tspan class="c"> site.yml</tspan></text></g>
+    <text y="240" class="h o">PLAY RECAP *********************************************<set attributeName="opacity" to="1" begin="6.0s" fill="freeze"/></text>
+    <text y="264" class="h" xml:space="preserve"><tspan class="c">prod-*   : </tspan><tspan class="ok">ok=42</tspan><tspan class="c">  changed=0  unreachable=0  failed=0</tspan><set attributeName="opacity" to="1" begin="6.5s" fill="freeze"/></text>
+
+    <!-- 4: motto -->
+    <g clip-path="url(#c4)"><text y="300"><tspan class="p">$ </tspan><tspan class="c">echo $MOTTO</tspan></text></g>
+    <text y="324" class="h a">automatizar lo repetitivo, mantener prod aburrido<set attributeName="opacity" to="1" begin="8.7s" fill="freeze"/></text>
+  </g>
+
+  <!-- blinking cursor: follows the active prompt line -->
+  <rect class="cursor" width="9" height="17" x="44" y="58">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="44;100" begin="0.6s" dur="0.7s" fill="freeze"/>
+    <set attributeName="opacity" to="0" begin="1.3s" end="2.4s"/>
+    <set attributeName="y" to="118" begin="2.4s" fill="freeze"/>
+    <animate attributeName="x" values="44;163" begin="2.4s" dur="0.8s" fill="freeze"/>
+    <set attributeName="opacity" to="0" begin="3.2s" end="4.3s"/>
+    <set attributeName="y" to="202" begin="4.3s" fill="freeze"/>
+    <animate attributeName="x" values="44;343" begin="4.3s" dur="1.4s" fill="freeze"/>
+    <set attributeName="opacity" to="0" begin="5.7s" end="7.6s"/>
+    <set attributeName="y" to="286" begin="7.6s" fill="freeze"/>
+    <animate attributeName="x" values="44;145" begin="7.6s" dur="0.8s" fill="freeze"/>
+  </rect>
+</svg>
